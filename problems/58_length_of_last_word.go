@@ -2,6 +2,7 @@ package problems
 
 import "fmt"
 
+// Problem58
 /*
 Given a string s consisting of words and spaces, return the length of the last word in the string.
 
@@ -46,7 +47,7 @@ func Problem58() {
 		}
 	}
 
-	fmt.Println("Success passed")
+	fmt.Println("Problem58 - Success passed")
 
 }
 
