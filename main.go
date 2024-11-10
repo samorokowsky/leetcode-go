@@ -1,12 +1,14 @@
 package main
 
-import "github.com/samorokowsky/leetcode-go/problems"
+import (
+	"github.com/samorokowsky/leetcode-go/problems/easy"
+	"github.com/samorokowsky/leetcode-go/problems/medium"
+)
 
 func main() {
-	// Easy
-	problems.Problem58()
+	easy.Problem58()
 
-	// Medium
-	problems.Problem264()
-	problems.Problem371()
+	medium.Problem264()
+	medium.Problem371()
+	medium.Problem172()
 }
