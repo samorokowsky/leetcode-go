@@ -138,3 +138,37 @@ func contains(slice []int, element int) bool {
 	}
 	return false
 }
+
+func nthUglyNumberSlowVersion(n int) int {
+	integer := 1
+	var uglyNumbers []int
+
+	for len(uglyNumbers) < n {
+		checkedInteger := integer
+
+		if checkedInteger%2 == 0 {
+			checkedInteger = divideIfDivisible(checkedInteger, 2)
+		}
+		if checkedInteger%3 == 0 {
+			checkedInteger = divideIfDivisible(checkedInteger, 3)
+		}
+		if checkedInteger%5 == 0 {
+			checkedInteger = divideIfDivisible(checkedInteger, 5)
+		}
+
+		if checkedInteger == 1 {
+			uglyNumbers = append(uglyNumbers, integer)
+		}
+		integer++
+	}
+
+	return uglyNumbers[n-1]
+
+}
+
+func divideIfDivisible(num int, divider int) int {
+	if num%divider == 0 {
+		num = divideIfDivisible(num/divider, divider)
+	}
+	return num
+}

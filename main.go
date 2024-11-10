@@ -8,4 +8,5 @@ func main() {
 
 	// Medium
 	problems.Problem264()
+	problems.Problem371()
 }
