@@ -7,6 +7,8 @@ import (
 
 func main() {
 	easy.Problem58()
+	easy.Problem125()
+	easy.Problem202()
 
 	medium.Problem264()
 	medium.Problem371()
